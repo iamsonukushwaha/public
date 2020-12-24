@@ -1,11 +1,16 @@
 'use strict';
 
 
-
 let today = new Date();
-let formatDate = today.toDateString();
-let selectElement = document.getElementById('date');
-selectElement.innerHTML = formatDate;
+document.getElementById('date').innerHTML = today.toDateString();
 
-console.log('Here\'s a hidden message');
+
+function Timer() {
+    var d = new Date();
+    document.getElementById("time").innerHTML = d.toLocaleTimeString() ;
+}
+
+setInterval(Timer, 1000);
+
+// console.log('Here\'s a hidden message');
 

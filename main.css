@@ -14,9 +14,15 @@ li {
 .list {
     list-style: square;
 }
+
+.today {
+    display: flex;
+    
+}
   
-#date {
+#date, #time {
     font-size: 12px;
+    padding: 10px;
     font-style: italic;
     font-weight: bold;
 }
